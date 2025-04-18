@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>UrbanStep - Scarpe di Lusso</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    #store {
+      padding: 50px;
+      text-align: center;
+    }
+    #store h1 {
+      font-size: 48px;
+    }
+    #store p {
+      font-size: 24px;
+    }
+    #store img {
+      width: 300px;
+      margin: 20px;
+    }
+    #hacker {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      color: #0f0;
+      font-family: monospace;
+      font-size: 22px;
+      padding: 40px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .blink {
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.1; }
+    }
+  </style>
+</head>
+<body>
+  <div id="store">
+    <h1>UrbanStep</h1>
+    <p>Scopri la nuova collezione 2025</p>
+    <img src="https://via.placeholder.com/300x200?text=Scarpa+1" alt="Scarpa 1">
+    <img src="https://via.placeholder.com/300x200?text=Scarpa+2" alt="Scarpa 2">
+    <img src="https://via.placeholder.com/300x200?text=Scarpa+3" alt="Scarpa 3">
+  </div>
+
+  <div id="hacker">
+    <h1 class="blink">ACCESSO 007 ESEGUITO</h1>
+    <p>Infiltrazione nel sistema in corso...</p>
+    <p>Accesso non autorizzato rilevato</p>
+    <p>Decodifica dei dati in tempo reale...</p>
+    <p class="blink">SEI ENTRATO NEL MIO TELEFONO</p>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById('store').style.display = 'none';
+      document.getElementById('hacker').style.display = 'block';
+    }, 5000);
+  </script>
+</body>
+</html>
